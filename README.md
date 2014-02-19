@@ -1,89 +1,83 @@
 # Meteor
 
-Meteor is an ultra-simple environment for building modern web
-applications.
+(tradução em andamento...)
 
-With Meteor you write apps:
+Meteor é um ultra simples ambiente para o desenvolvimento de websites modernos.
 
-* in pure Javascript
-* that send data over the wire, rather than HTML
-* using your choice of popular open-source libraries
+Com Meteor você desenvolve aplicações:
 
-Documentation is available at http://docs.meteor.com/
+* em Javascript puro
+* envie dados em vez de HTML
+* use bibliotecas open-source javascript que quiser
+
+A documentação está disponível em  http://docsbr.meteor.com/
 
 ## Quick Start
 
-Install Meteor:
+Começo rápido:
 
     curl https://install.meteor.com | /bin/sh
 
-Create a project:
+Criar um projeto:
 
     meteor create try-meteor
 
-Run it:
+Rodar:
 
     cd try-meteor
     meteor
 
-Deploy it to the world, for free:
+Deploy para o mundo, de graça:
 
     meteor deploy try-meteor.meteor.com
 
-## Slow Start (for developers)
+## Começo demorado (para desenvolvedores)
 
-If you want to run on the bleeding edge, or help develop Meteor, you
-can run Meteor directly from a git checkout.
+Se você quiser rodar a versão mais nova, ou ajudar desenvolver Meteor, você pode rodar diretamente com um git checkout.
 
     git clone git://github.com/meteor/meteor.git
     cd meteor
 
-If you're the sort of person who likes to build everything from scratch,
-you can build all the Meteor dependencies (node.js, npm, mongodb, etc)
-with the provided script. This requires git, a C and C++ compiler,
-autotools, and scons. If you do not run this script, Meteor will
-automatically download pre-compiled binaries when you first run it.
+Se você é o tipo de pessoa que gosta de desenvolver tudo do zero, você pode desenvolver 
+todas as dependências do Meteor (node.js, npm, mongodb, etc) com o script disponível.
+Isso requer git, um compilador C e C++, autotools e scons. Se você não rodar esse script,
+Meteor vai automaticamente fazer o download dos binários pré compilados na primeira vez que você rodar.
 
-    # OPTIONAL
+    # OPCIONAL
     ./scripts/generate-dev-bundle.sh
 
-Now you can run meteor directly from the checkout (if you did not
-build the dependency bundle above, this will take a few moments to
-download a pre-build version).
+Agora você pode rodar Meteor diretamente de um checkout (Se você não construiu a dependência bundle acima, vai demorar alguns minutos para fazer o download da versão pre-build.
 
     ./meteor --help
 
-From your checkout, you can read the docs locally. The `/docs` directory is a
-meteor application, so simply change into the `/docs` directory and launch
-the app:
+Com o checkout, você pode ler os documentos localmente. A pasta `/docs` é uma aplicação meteor
+meteor application, então simplesmente acesse a pasta  `/docs` e rode a aplicação:
 
     cd docs/
     ../meteor
 
-You'll then be able to read the docs locally in your browser at
+Você poderá ler os documentos localmente em seu browser em:
 `http://localhost:3000/`
 
-Note that if you run Meteor from a git checkout, you cannot pin apps to specific
-Meteor releases or run using different Meteor releases using `--release`.
+Nota: se você usar git checkout para rodar Meteor, não conseguirá rodar releases usando `--release`.
 
-## Uninstalling Meteor
+## Desinstalar Meteor
 
-Aside from a short launcher shell script, Meteor installs itself inside your
-home directory. To uninstall Meteor, run:
+Meteor se instala dentro de sua pasta home. Para desistalar, rode:
 
     rm -rf ~/.meteor/
     sudo rm /usr/local/bin/meteor
 
-## Developer Resources
+## Recursos para Desenvolvedores
 
-Building an application with Meteor?
+Desenvolvendo uma aplicação com Meteor?
 
-* Announcement list: sign up at http://www.meteor.com/
-* Ask a question: http://stackoverflow.com/questions/tagged/meteor
-* Meteor help and discussion mailing list: https://groups.google.com/group/meteor-talk
+* Lista de novidades: inscreva-se em http://www.meteor.com/
+* Dúvidas?: http://stackoverflow.com/questions/tagged/meteor
+* Lista de emails para discussões e ajuda: https://groups.google.com/group/meteor-talk
 * IRC: `#meteor` on `irc.freenode.net`
 
-Interested in contributing to Meteor?
+Interessado em contribuir com Meteor?
 
-* Core framework design mailing list: https://groups.google.com/group/meteor-core
-* Contribution guidelines: https://github.com/meteor/meteor/tree/devel/Contributing.md
+* Lista de emails do core desenvolvimento: https://groups.google.com/group/meteor-core
+* Como contribuir: https://github.com/meteor/meteor/tree/devel/Contributing.md
