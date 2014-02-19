@@ -1,0 +1,117 @@
+<template name="introduction">
+<div id="introduction">
+<!-- clicking this anchor in the left bar should scroll to top of doc,
+not here -->
+<!-- XXX by: (three headshot thumbnails w names) -->
+
+{{#markdown}}
+
+<b>_Meteor é um ultra simples ambiente para o desenvolvimento de websites modernos.
+O que demorava semanas, até mesmo com as melhores ferramentas, agora demora horas com meteor._</b>
+
+A internet foi originalmente criada para trabalhar da mesma forma que os mainframes trabalhavam no anos 70. Uma aplicação no servidor renderizava uma tela e a enviava pela rede para um terminal dumb. Qualquer coisa que o usuário fazia o servidor renderizava inteiramente uma nova tela.
+
+Esse modelo serviu de base para a internet durante décadas. Deu nascimento a frameworks como LAMP, Rails, Django e ao PHP.
+
+Mas os melhores times, com os maiores orçamentos e os mais longos cronogramas agora desenvolvem aplicações em JavaScript que rodam no cliente. Essas aplicações tem interfaces estelares. Elas não carregam paginas e são reativas: mudanças de qualquer cliente imediatamente aparecem em todas as telas.
+
+Eles construiram do jeito  mais difícil. Meteor propõe um jeito mais significamente mais simples e mais divertido de construir aplicações estelares.
+
+Você consegue construir uma aplicação completa em apenas um final de semana ou uma hackathon com bastante cafeina!
+
+Não precisará provisionar recursos de servidor ou fazer deploy de API endpoints na nuvem, administrar banco de dados, brigar com uma camada 0RM, mudando de linguagem entre JavaScript e Ruby ou mandar dados inválidos aos clientes.
+
+Meteor é um trabalho em andamento, mas esperamos mostrar a direção em que estamos indo e adoraríamos seu feedback!
+
+<h2 id="quickstart">Começo rápido!</h2>
+
+<!-- change colors on these. $ and command output in grey, rest in
+white -->
+
+Os comandos em seguida funcionam em todas[plataformas suportadas](https://github.com/meteor/meteor/wiki/Supported-Platforms).
+
+Como instalar Meteor em sua máquina:
+
+<pre>
+$ curl https://install.meteor.com | /bin/sh
+</pre>
+
+Criar um projeto:
+
+<pre>
+$ meteor create myapp
+</pre>
+
+Rodar localmente:
+
+<pre>
+$ cd myapp
+$ meteor
+=&gt; Meteor server running on: http://localhost:3000/
+</pre>
+
+Mostrar sua aplicação para o mundo! (em um servidor grátis que a gente oferece):
+
+<pre>
+$ meteor deploy myapp.meteor.com
+</pre>
+
+<h2 id="sevenprinciples">Sete Princípios do Meteor</h2>
+
+<!-- wire with [1,2,3] on it -->
+- _Data on the Wire_. Não envie HTML pela rede. Envie dados e deixe o cliente decidir como rederizá-la.
+
+<!-- two people, one speech bubble coming out of both of their mouths,
+containing '{}' -->
+- _Uma linguagem._ Programe em JavaScript ambos os lados cliente e servidor da sua aplicação.
+
+<!-- globe, with the same database icon in US and Russia -->
+- _Database Everywhere_. Use a mesma transparente API para acessar seu banco de dados no cliente ou servidor.
+
+<!-- clock with zero time elapsed. or clock on left with zero time
+elapsed, horizontal bold line to a clock with zero time elapsed, but a
+line at a 45 degree angle to a a clock in grey with 100 ms
+elapsed. like shades of relativity -->
+- _Latency Compensation_. No cliente, use prefetching e model simulation para fazer parecer que existe latência zero na conexão com o banco de dados.
+
+<!-- knee getting hit with hammer like in reflex test -->
+- _Full Stack Reatividade_. Faça realtime o padrão. Em todas as camadas do banco de dados aos templates, você deve criar uma interface voltada a eventos.
+
+- _Abrace o Eco sistema_. Meteor é um projeto open source e integra, ao invés de substituir, ferramentas e frameworks open sorce já existentes.
+
+<!-- zen circle -->
+- _Simplicidade é igual Produtividade_. O melhro jeito de fazer alguma coisa simples é na verdade sendo simples. Alcance isso atravês de APIs limpas, classicamente lindas.
+
+<h2 id="resources">Recursos para Desenvolvedores</h2>
+
+<!-- https://github.com/blog/273-github-ribbons -->
+<a href="http://github.com/meteor/meteor"><img class="github-ribbon visible-desktop" style="position: absolute; top: 0; right: 0; border: 0;" src="/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
+
+Se alguma coisa em Meteor despertou interesse, esperamos que você se envolva no projeto!
+
+
+
+<dl class="involved">
+<dt><span>FACEBOOK METEOR BRASIL</span></dt>
+<dd>Comunidade brasileira sobre Meteor no facebook faça parte!<a href="https://www.facebook.com/groups/meteorbrasil/">Meteor Brasil</a>.
+</dd>
+<dt><span>Stack Overflow</span></dt>
+<dd>Melhor lugar para perguntar (e responder) questões técnicas é no <a href="http://stackoverflow.com/questions/tagged/meteor">Stack
+  Overflow</a>.  Confirme ao perguntar algo de adicionar a tag <code>meteor</code> em sua questão.
+</dd>
+
+<dt><span>Lista de emails</span></dt>
+<dd>
+  Nós temos duas listas de email para Meteor (em inglês).  <nobr><a href="http://groups.google.com/group/meteor-talk"><code>meteor-talk@googlegroups.com</code></a></nobr>
+  para questões em geral, pedidos de ajuda, e novidades no projeto.
+  <nobr><a href="http://groups.google.com/group/meteor-core"><code>meteor-core@googlegroups.com</code></a></nobr>
+  é para coordernar mudanças no pacotes principais do Meteor e construir ferramentas.
+</dd>
+
+<dt><span>GitHub</span></dt>
+<dd>O código principal está no <a href="http://github.com/meteor/meteor">GitHub</a>.  Se você é capaz de escrever código e apresentar problemas, vamos adorar sua ajuda.  Por favor leia <a href="https://github.com/meteor/meteor/wiki/Contributing-to-Meteor">Contribuindo para Meteor</a> e aprenda como começar.
+</dl>
+
+{{/markdown}}
+</div>
+</template>
