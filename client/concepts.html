@@ -2,10 +2,10 @@
 
 <h1 id="concepts">Conceitos</h1>
 
-We've written our fair share of single-page JavaScript applications by hand.
-Writing an entire application in one language (JavaScript) with one
-data format (JSON) is a real joy.  Meteor is everything we wanted
-when writing those apps.
+Nós escrevemos uma boa parte das aplicações JavaScript single-page à mão.
+Escrever uma aplicação inteira em apenas uma linguagem (JavaScript) usando somente 
+um formato de dados (JSON) é realmente bastante prazeroso. Meteor é tudo aquilo que 
+você desejava para desenvolver estes aplicativos.
 
 {{> whatismeteor }}
 {{> structure }}
@@ -25,47 +25,50 @@ when writing those apps.
 
 <h2 id="whatismeteor">O que é Meteor?</h2>
 
-Meteor is two things:
+Meteor é duas coisas:
 
-* A _library of packages_: pre-written, self-contained modules that
-you might need in your app.<br>
-There are about a dozen core Meteor
-packages that most any app will use (for example `webapp`, which
-handles incoming HTTP connections, and `templating`, which lets you
-make HTML templates that automatically update live as data changes).
-Then there are optional packages like `email`, which lets your app
-send emails, or the Meteor Accounts series (`account-password`,
-`accounts-facebook`, `accounts-ui`, and others) which provide a
-full-featured user account system that you can drop right into your
-app. And beyond these "official" packages, there are hundreds of
-community-written packages in [Atmosphere](https://atmosphere.meteor.com/),
-one of which might do just what you need.
+* Uma _biblioteca de pacotes_: módulos pré-definidos e independentes que
+você pode usar no seu projeto<br>
+Existe aproximadamente uma dúzia de pacotes essenciais que 
+praticamente toda aplicação irá usar (por exemplo o `webapp`, que
+trata conexões de entrada HTTP e o `templating` que permite que você
+crie templates HTML que automaticamente são atualizados conforme os dados 
+mudam).
+Também existem pacotes opcionais como o `email` que permite que seu app
+envie emails ou os do grupo Meteor Accounts (`account-password`,
+`accounts-facebook`, `accounts-ui` e outros) que provêem um sistema de contas
+com todos os recursos necessários para você começar a usar imediatamente em seu projeto. Além 
+desses pacotes "oficiais" existem centenas de pacotes desenvolvidos pela 
+comunidade no [Atmosphere](https://atmosphere.meteor.com/). Um deles com certeza
+se encaixará para aquilo que você precisa.
 
-* A _command-line tool_ called `meteor`.<br>
-`meteor` is a build tool analogous to `make`, `rake`, or the non-visual parts of
-Visual Studio. It gathers up all of the source files and assets in your
-application, carries out any necessary build steps (such as compiling
-[CoffeeScript](http://coffeescript.org), minifying CSS, building
-[npm](https://npmjs.org/) modules, or generating source maps), fetches the
-packages used by your app, and outputs a standalone, ready-to-run application
-bundle. In development mode it can do all of this interactively, so that
-whenever you change a file you immediately see the changes in your browser. It's
-super easy to use out of the box, but it's also extensible: you can add support
-for new languages and compilers by adding build plugin packages to your app.
+* Uma _ferramenta de linha de comando_ chamada `meteor`.<br>
+`meteor` é uma ferramenta de desenvolvimento análoga ao `make`, 
+`rake` ou à algumas das partes não-visuais do Visual Studio. 
+Ela junta todo o código fonte e os recursos do seu projeto, 
+cuida de todo os passos da build (compilar [CoffeeScript](http://coffeescript.org),
+minificar CSS, construir os módulos [npm](https://npmjs.org/) e gerar mapas
+dos fontes), busca todos os pacotes utilizados pelo app e  
+gera uma versão standalone, um bundle dessa aplicação pronta para rodar.
+Em modo de desenvolvimento será possível fazer tudo isso interativamente de modo que
+sempre que houver uma mudança em algum arquivo do projeto será possível
+vê-la imediatamente em seu navegador. É uma ferramenta "out of the box", mas também
+é extensível: é possível adicionar suporte para novas linguagens e compiladores
+instalando pacotes de plugins prontos para seu aplicativo.
 
-The key idea in the Meteor package system is that _everything should
-work identically in the browser and on the server_ (wherever it makes
-sense, of course: browsers can't send email and servers can't capture
-mouse events). Our whole ecosystem has been built from the ground up
-to support this.
+A idéia principal no sistema de pacotes do Meteor é que _tudo deverá
+funcionar igual tanto no navegador quanto no servidor_ (até onde for possível,
+é claro: navegadores não podem enviar emails e servidores não podem capturar
+eventos do mouse). Nosso ecossistema inteiro foi construído desde a base
+para dar suporte a isto.
 
 {{#note}}
-`meteor` cannot yet fetch packages from Atmosphere. If you are using
-Atmosphere packages you should take a look at
-[Meteorite](http://oortcloud.github.io/meteorite/), a tool that will
-help you download and manage your Atmosphere packages.
+`meteor` ainda não pode instalar os pacotes do Atmosphere. Se 
+quiser usar os pacotes do Atmosphere você deve dar uma olhada no
+[Meteorite](http://oortcloud.github.io/meteorite/), uma ferramenta que 
+irá ajudá-lo a gerenciar os pacotes Atmosphere.
 
-In Meteor 1.0, the `meteor` build tool will have full support for
+No Meteor 1.0, o comando `meteor` terá suporte total para o 
 Atmosphere.
 {{/note}}
 
