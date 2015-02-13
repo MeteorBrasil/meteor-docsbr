@@ -1,0 +1,71 @@
+<template name="introduction">
+<div id="introduction">
+<!-- clicking this anchor in the left bar should scroll to top of doc,
+not here -->
+<!-- XXX by: (three headshot thumbnails w names) -->
+
+{{#markdown}}
+
+<b>_Meteor é um ultra simples ambiente para o desenvolvimento de websites modernos.
+O que demorava semanas, até mesmo com as melhores ferramentas, agora demora horas com Meteor._</b>
+
+A internet foi originalmente criada para trabalhar da mesma forma que os mainframes trabalhavam no anos 70. Uma aplicação no servidor renderizava uma tela e a enviava pela rede para um terminal dumb. Qualquer coisa que o usuário fazia o servidor renderizava inteiramente uma nova tela.
+
+Esse modelo serviu de base para a internet durante décadas. Deu nascimento a frameworks como LAMP, Rails, Django e ao PHP.
+
+Mas os melhores times, com os maiores orçamentos e os mais longos cronogramas agora desenvolvem aplicações em JavaScript que rodam no cliente. Essas aplicações tem interfaces estelares. Elas não carregam paginas e são reativas: mudanças de qualquer cliente imediatamente aparecem em todas as telas.
+
+Eles construiram do jeito  mais difícil. Meteor propõe um jeito mais significamente mais simples e mais divertido de construir aplicações estelares.
+
+Você consegue construir uma aplicação completa em apenas um final de semana ou uma hackathon com bastante cafeina!
+
+Não precisará provisionar recursos de servidor ou fazer deploy de API endpoints na nuvem, administrar banco de dados, brigar com uma camada 0RM, mudando de linguagem entre JavaScript e Ruby ou mandar dados inválidos aos clientes.
+
+Meteor é um trabalho em andamento, mas esperamos mostrar a direção em que estamos indo e adoramos feedback!
+
+{{> quickStart}}
+
+{{> principles}}
+
+<h2 id="recursos">Recursos para desenvolvedores</h2>
+
+<!-- https://github.com/blog/273-github-ribbons -->
+<a href="http://github.com/meteor/meteor"><img class="github-ribbon visible-desktop" style="position: absolute; top: 0; right: 0; border: 0;" src="/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
+
+Se alguma coisa em Meteor despertou interesse, esperamos que você se envolva no projeto!
+
+<dl class="involved">
+<dt><span>FACEBOOK METEOR BRASIL</span></dt>
+<dd>Comunidade brasileira sobre Meteor no facebook faça parte!<a href="https://www.facebook.com/groups/meteorbrasil/">Meteor Brasil</a>.
+</dd>
+
+<dt><span>Tutorial</span></dt>
+<dd>Comece rápido com o <a href="https://www.meteor.com/install">tutorial Meteor oficial</a>!
+</dd>
+
+<dt><span>Stack Overflow</span></dt>
+<dd>O melhor lugar para perguntar (e responder) questões técnicas é no <a href="http://stackoverflow.com/questions/tagged/meteor">Stack
+  Overflow</a>.  Confirme ao perguntar algo de adicionar a tag <code>meteor</code> em sua questão.
+</dd>
+
+<dt><span>Lista de emails</span></dt>
+<dd>
+  Nós temos duas listas de email para Meteor (em inglês).  <nobr><a href="http://groups.google.com/group/meteor-talk"><code>meteor-talk@googlegroups.com</code></a></nobr>
+  para questões em geral, pedidos de ajuda, e novidades no projeto.
+  <nobr><a href="http://groups.google.com/group/meteor-core"><code>meteor-core@googlegroups.com</code></a></nobr>
+  é para coordernar mudanças no pacotes principais do Meteor e construir ferramentas.
+</dd>
+
+<dt><span>GitHub</span></dt>
+<dd>O código principal está no <a href="http://github.com/meteor/meteor">GitHub</a>.  Se você é capaz de escrever código e apresentar problemas, vamos adorar sua ajuda.  Por favor leia <a href="https://github.com/meteor/meteor/wiki/Contributing-to-Meteor">Contribuindo para Meteor</a> e aprenda como começar.
+</dl>
+
+<dt><span>O Manual Meteor</span></dt>
+<dd>Artigos aprofundados sobre os principais conceitos do Meteor podem ser encontrados em <a href="http://manual.meteor.com/">Meteor Manual</a>. O primeiro artigo é sobre o <a href="http://manual.meteor.com/#tracker">Tracker</a>,
+nosso transparente framework reativo. Mais artigos (cobrindo tópicos como Blaze, Unibuild e DDP) serão lançados em breve!
+</dd>
+</dl>
+
+{{/markdown}}
+</div>
+</template>

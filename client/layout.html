@@ -1,0 +1,50 @@
+<head>
+  <title>Documentação - Meteor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Description"
+  content="Meteor é uma plataforma open-source JavaScript para o desenvolvimento de  aplicações web de alta qualidade em uma fração de tempo,  quer você seja um desenvolvedor com muita experiência ou apenas começando sua carreira."/>
+  <link rel="icon" href="/favicon.png" type="image/png" />
+</head>
+
+<body>
+  <div class="body {{openSidebar}}">
+    {{> search}}
+    <div id="nav">
+      {{> sidebar}}
+    </div>
+    <div class="overlay close-sidebar"></div>
+    {{> topBar}}
+    <div class="main-content">
+      <div id="main">
+        <div><div id="top"></div></div>
+        <div>
+          {{> fullApiContent}}
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+<template name="sidebar">
+  <div id="nav-inner">
+    <h1>
+      <a href="#/full/">
+        <img src="/logo.png" class="logo" alt="Meteor" />
+        <div>{{release}} Documentação</div>
+      </a>
+    </h1>
+
+    {{> tableOfContents}}
+  </div>
+</template>
+
+<template name="topBar">
+  <div class="top-bar">
+    <div class="hamburger-menu-target open-sidebar">
+      <div class="hamburger-menu"></div>
+    </div>
+    <h1>
+      <img src="/logo.png" class="logo" alt="Meteor" /> {{release}} Docs
+    </h1>
+  </div>
+</template>
