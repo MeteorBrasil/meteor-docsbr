@@ -63,7 +63,7 @@ Nota: se você usar git checkout para rodar Meteor, não conseguirá rodar relea
 
 ## Desinstalar Meteor
 
-Meteor se instala dentro de sua pasta home. Para desistalar, rode:
+Meteor se instala dentro de sua pasta home. Para desinstalar, rode:
 
     rm -rf ~/.meteor/
     sudo rm /usr/local/bin/meteor
